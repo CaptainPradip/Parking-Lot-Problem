@@ -1,0 +1,14 @@
+{
+  "localMongodb": {
+    "url": "mongodb://",
+    "username": "",
+    "password": "",
+    "serverUrl": "localhost",
+    "port": "27017",
+    "databaseName": "ParkingLot"
+  },
+  "secret": "secret_key",
+  "tokenExpires": 2000,
+  "superSecret": "gOROfWnARLrbodzhKALrkTd1XTGTa6L3cuCAVKoohR2IishKtMvtZYliAhKpP7D",
+  "port": 4000
+}
