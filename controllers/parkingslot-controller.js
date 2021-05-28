@@ -50,7 +50,7 @@ exports.bookParking = async (req, res,) => {
         else {
           if (parkingSlot) {
             setTimeout(async () => {
-              await ParkingSlot.findOneAndUpdate({ userEmail: req.jwt.email }, { isOccupied: false, bookingTime: '', userEmail: '' });
+              await ParkingSlot.findOneAndUpdate({ userEmail: req.jwt.email , arrivalTime: '' }, { isOccupied: false, bookingTime: '', userEmail: '' });
             }, isOccupiedParking ? 15 * 60 * 1000 : 30 * 60 * 1000);
             res.json({
               success: true,
