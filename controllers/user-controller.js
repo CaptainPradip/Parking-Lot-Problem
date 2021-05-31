@@ -6,8 +6,7 @@ exports.createUser = (req, res,) => {
   var user = new User();
   user.email = req.body.email;
   user.password = req.body.password;
-  user.type = req.body.type;
-  console.log(req.body.email, req.body.password)
+  user.type = req.body.type ? req.body.type : 'General';
   if (req.body.email == null || req.body.email == '' || req.body.password == null || req.body.password == '') {
     res.json({ success: false, message: "Ensure User Name ,Password ,Email is provided !!!" });
   }
@@ -26,7 +25,6 @@ exports.createUser = (req, res,) => {
   }
 }
 exports.loginUser = (req, res,) => {
-  console.log(req.body.password + "=================" + req.body.email)
   if (req.body.password == null || req.body.password == '' || req.body.email == null || req.body.email == '') {
 
     res.json({ success: false, message: "Email ,Password is not provided !!!" });

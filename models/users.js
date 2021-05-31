@@ -7,7 +7,6 @@ var userSchema = new Schema({
   password: { type: String, required: true },
   role: { type: String, default: 'user' },
   type: { type: String, default: 'General' },
-  parkingNumber: { type: Schema.Types.ObjectId, required: false, default: '' },
   createdDate: { type: Date, formate: 'dd mmmmm yyyy', default: Date.now },
   updatedDate: { type: Date, formate: 'dd mmmmm yyyy', default: Date.now },
 });

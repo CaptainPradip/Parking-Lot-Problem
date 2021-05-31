@@ -8,7 +8,5 @@
     "databaseName": "ParkingLot"
   },
   "secret": "secret_key",
-  "tokenExpires": 2000,
-  "superSecret": "gOROfWnARLrbodzhKALrkTd1XTGTa6L3cuCAVKoohR2IishKtMvtZYliAhKpP7D",
   "port": 4000
 }
